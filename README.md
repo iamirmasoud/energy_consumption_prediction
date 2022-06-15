@@ -55,9 +55,13 @@ Please download data and put it under the `data` subdirectory.
 You can use my pre-trained models for your own experimentation. I put them in the `models` directory.
 
 ## Results
+While the GRU model may have made smaller errors and edged the LSTM model slightly in terms of sMAPE (Symmetric Mean Absolute Percentage Error), the difference is insignificant and thus inconclusive. There have been many other tests conducted by others comparing both these models but there has largely been no clear winner as to which is the better architecture overall. 
 
-
-
-
-#### Prediction Example:
+Here are samples of energy consumption prediction results on test set for four different regions:
 ![alt text](imgs/prediction_example.png)
+
+It looks like the models are largely successful in predicting the trends of energy consumption. While they may still get some changes wrong, such as delays in predicting a drop in consumption, the predictions follow very closely to the actual line on the test set. This is due to the nature of energy consumption data and the fact that there are patterns and cyclical changes that the model can account for. Tougher time-series prediction problems such as stock price prediction or sales volume prediction may have data that is largely random or doesn’t have predictable patterns, and in such cases, the accuracy will definitely be lower.
+
+
+
+
