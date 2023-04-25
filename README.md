@@ -17,16 +17,16 @@ git clone https://github.com/iamirmasoud/energy-consumption-prediction .git
 cd energy-consumption-prediction 
 ```
 
-2. Create (and activate) a new environment, named `energy_env` with Python 3.7. If prompted to proceed with the install `(Proceed [y]/n)` type y.
+2. Create (and activate) a new environment, named `energy_env` with Python 3.8. If prompted to proceed with the install `(Proceed [y]/n)` type y.
 
 	```shell
-	conda create -n energy_env python=3.7
+	conda create -n energy_env python=3.8
 	source activate energy_env
 	```
 	
 	At this point your command line should look something like: `(energy_env) <User>:energy-consumption-prediction  <user>$`. The `(energy_env)` indicates that your environment has been activated, and you can proceed with further package installations.
 
-6. Before you can experiment with the code, you'll have to make sure that you have all the libraries and dependencies required to support this project. You will mainly need Python3.7+, PyTorch and its torchvision, and Matplotlib. You can install dependencies using:
+6. Before you can experiment with the code, you'll have to make sure that you have all the libraries and dependencies required to support this project. You will mainly need Python3.8+, PyTorch and its torchvision, and Matplotlib. You can install dependencies using:
 ```
 pip install -r requirements.txt
 ```
